@@ -1,9 +1,9 @@
-DROP TABLE away_team;
-DROP TABLE coach;
-DROP TABLE home_team;
-DROP TABLE location;
-DROP TABLE match;
-DROP TABLE play;
-DROP TABLE player;
-DROP TABLE team;
 DROP TABLE TEAM_PLAYER;
+DROP TABLE player;
+DROP TABLE play;
+DROP TABLE match;
+DROP TABLE location;
+DROP TABLE coach;
+drop table home_team;
+drop table away_team;
+drop table team;
