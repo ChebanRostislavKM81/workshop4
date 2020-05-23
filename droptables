@@ -7,3 +7,4 @@ DROP TABLE coach;
 drop table home_team;
 drop table away_team;
 drop table team;
+
