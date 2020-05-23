@@ -21,7 +21,7 @@ CREATE TABLE coach (
     coach_name VARCHAR2(28) NOT NULL
 );
 
-ALTER TABLE coach ADD CONSTRAINT coach_pk PRIMARY KEY ( coach_name );
+
 
 CREATE TABLE home_team (
     home_team VARCHAR2(28) NOT NULL
@@ -87,10 +87,6 @@ CREATE UNIQUE INDEX team_player__idx ON
         player_name
     ASC );
 
-CREATE UNIQUE INDEX team_player__idxv1 ON
-    team_player (
-        coach_name
-    ASC );
 
 CREATE UNIQUE INDEX team_player__idxv2 ON
     team_player (
@@ -123,9 +119,7 @@ ALTER TABLE play
     ADD CONSTRAINT play_match_fk FOREIGN KEY ( match_id )
         REFERENCES match ( match_id );
 
-ALTER TABLE team_player
-    ADD CONSTRAINT team_player_coach_fk FOREIGN KEY ( coach_name )
-        REFERENCES coach ( coach_name );
+
 
 ALTER TABLE team_player
     ADD CONSTRAINT team_player_player_fk FOREIGN KEY ( player_name )
