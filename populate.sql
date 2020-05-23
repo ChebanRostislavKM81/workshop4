@@ -40,7 +40,7 @@ INSERT INTO HOME_TEAM(home_team)
 VALUES('Ireland');
 
 INSERT INTO COACH(coach_name)
-VALUES('Southgate');
+VALUES('Bob');
 INSERT INTO COACH(coach_name)
 VALUES('Davies');
 INSERT INTO COACH(coach_name)
@@ -60,8 +60,8 @@ VALUES(2, 'Cardiff', 'Wales', 'Wales', 'Ireland');
 
 
 INSERT INTO TEAM_PLAYER(team, player_name, coach_name)
-VALUES('England', 'Rooney', 'Southgate');
+VALUES('England', 'Rooney', 'Bob');
 INSERT INTO TEAM_PLAYER(team, player_name, coach_name)
-VALUES('Wales', 'Bale', 'Davies');
+VALUES('Wales', 'Bale', 'Bob');
 INSERT INTO TEAM_PLAYER(team, player_name, coach_name)
 VALUES('Ireland', 'Duffy', 'Daniels');
